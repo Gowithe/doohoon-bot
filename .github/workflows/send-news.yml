@@ -1,0 +1,13 @@
+name: Send Stock News
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+    - cron: '0 11 * * *'
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl https://doohoon-bot.onrender.com/news-scheduler.php
