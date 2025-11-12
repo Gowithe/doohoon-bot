@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: doohoon-bot
+    env: php
+    buildCommand: composer install
+    startCommand: php -S 0.0.0.0:$PORT
+    envVars:
+      - key: LINE_CHANNEL_TOKEN
+        scope: run
+      - key: FINNHUB_API_KEY
+        scope: run
+      - key: OPENAI_API_KEY
+        scope: run
+      - key: OPENAI_ORG_ID
+        scope: run
+      - key: OPENAI_PROJECT_ID
+        scope: run

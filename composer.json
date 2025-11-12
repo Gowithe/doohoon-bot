@@ -1,0 +1,8 @@
+{
+  "name": "doohoon/line-bot-stock-ai",
+  "description": "DOOHOON LINE BOT - Stock Analysis with AI",
+  "type": "project",
+  "require": {
+    "php": "^8.0"
+  }
+}
